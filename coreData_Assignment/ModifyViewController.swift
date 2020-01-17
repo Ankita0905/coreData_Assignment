@@ -126,8 +126,8 @@ class ModifyViewController: UIViewController {
             let contact = Contact(firstname: firstn, lastname: lastn, email: emailn, phonenumber: phonen)
             self.contacts?.append(contact)
             saveCoreData()
-            let alert = UIAlertController(title: "Congratulations", message: "Modify Successfull", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "okay", style: UIAlertAction.Style.default, handler: nil))
+            let alert = UIAlertController(title: "Congratulations", message: "Modified Successfull", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
 
         }

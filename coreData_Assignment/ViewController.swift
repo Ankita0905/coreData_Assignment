@@ -32,8 +32,8 @@ class ViewController: UIViewController {
             let contact = Contact(firstname: firstname, lastname: lastname, email: email, phonenumber: phonenumber)
             self.contacts?.append(contact)
             saveCoreData()
-            let alert = UIAlertController(title: "Congratulations", message: "Save Successfull", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "okay", style: UIAlertAction.Style.default, handler: nil))
+            let alert = UIAlertController(title: "Congratulations", message: "Saved Successfull", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
 
             
